@@ -1188,6 +1188,35 @@
             .comparison-table { font-size: 0.9rem; }
             .roi-calculator { padding: 2rem; }
         }
+
+        /* FAQ Styles */
+        .faq-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .faq-item h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .faq-item p {
+            color: #64748b;
+            line-height: 1.8;
+        }
     </style>
 </head>
 <body>
@@ -1205,6 +1234,7 @@
             <ul class="nav-links">
                 <li><a onclick="showPage('home')">Home</a></li>
                 <li><a onclick="showPage('programs')">Programs</a></li>
+                <li><a onclick="showPage('resources')">Free Resources</a></li>
                 <li><a onclick="showPage('about')">About</a></li>
                 <li><a onclick="showPage('pricing')">Pricing</a></li>
                 <li><button class="cta-btn" onclick="showPage('enroll')">Enroll Now</button></li>
@@ -1217,6 +1247,7 @@
         <div class="mobile-menu" id="mobileMenu">
             <a onclick="showPage('home'); toggleMobileMenu();">Home</a>
             <a onclick="showPage('programs'); toggleMobileMenu();">Programs</a>
+            <a onclick="showPage('resources'); toggleMobileMenu();">Free Resources</a>
             <a onclick="showPage('about'); toggleMobileMenu();">About</a>
             <a onclick="showPage('pricing'); toggleMobileMenu();">Pricing</a>
             <a onclick="showPage('enroll'); toggleMobileMenu();" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px; text-align: center;">Enroll Now</a>
@@ -1672,6 +1703,162 @@
         </section>
     </div>
 
+    <!-- FREE RESOURCES PAGE -->
+    <div id="resources" class="page">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Free Resources</h1>
+                <p>Download our complete curriculum guides and career resources</p>
+            </div>
+        </section>
+
+        <!-- Free Curriculum Downloads -->
+        <section class="programs">
+            <h2 class="section-title">Download <span class="gradient-text">Free Curriculum Guides</span></h2>
+            <p class="section-subtitle">Get detailed week-by-week breakdown of what you'll learn in each program</p>
+            
+            <div class="program-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <div class="overlay">
+                            <div class="icon"><i class="fas fa-cogs"></i></div>
+                        </div>
+                    </div>
+                    <div class="program-header">
+                        <h3>DevOps Curriculum</h3>
+                        <p class="duration">Complete 6-Month Syllabus</p>
+                    </div>
+                    <div class="program-body">
+                        <p>Detailed breakdown of CI/CD, Docker, Kubernetes, AWS, Terraform, and more. See exactly what you'll learn week by week.</p>
+                        <button class="enroll-btn" onclick="showDownloadForm('DevOps')">Download Free PDF</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-image">
+                        <div class="overlay">
+                            <div class="icon"><i class="fas fa-code"></i></div>
+                        </div>
+                    </div>
+                    <div class="program-header">
+                        <h3>Software Engineering Curriculum</h3>
+                        <p class="duration">Complete 6-Month Syllabus</p>
+                    </div>
+                    <div class="program-body">
+                        <p>Full-stack development roadmap covering React, Node.js, MongoDB, APIs, and modern JavaScript frameworks.</p>
+                        <button class="enroll-btn" onclick="showDownloadForm('Software Engineering')">Download Free PDF</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-image">
+                        <div class="overlay">
+                            <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                        </div>
+                    </div>
+                    <div class="program-header">
+                        <h3>Cybersecurity Curriculum</h3>
+                        <p class="duration">Complete 6-Month Syllabus</p>
+                    </div>
+                    <div class="program-body">
+                        <p>CompTIA Security+ aligned curriculum covering ethical hacking, cloud security, SOC analysis, and penetration testing.</p>
+                        <button class="enroll-btn" onclick="showDownloadForm('Cybersecurity')">Download Free PDF</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-image">
+                        <div class="overlay">
+                            <div class="icon"><i class="fas fa-chart-line"></i></div>
+                        </div>
+                    </div>
+                    <div class="program-header">
+                        <h3>Data Science Curriculum</h3>
+                        <p class="duration">Complete 6-Month Syllabus</p>
+                    </div>
+                    <div class="program-body">
+                        <p>Python, Machine Learning, Deep Learning, AI integration, and data visualization - complete learning path included.</p>
+                        <button class="enroll-btn" onclick="showDownloadForm('Data Science')">Download Free PDF</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="programs" style="background: #f8fafc; margin: 0 -2rem; padding: 6rem 2rem;">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Get answers to common questions about our programs</p>
+            
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Do I need prior tech experience?</h3>
+                    <p>No! Our programs are designed for beginners. We start from the basics and build up to advanced concepts. All you need is a laptop, internet connection, and commitment to learn.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-clock"></i> How much time do I need to commit?</h3>
+                    <p>Expect 15-20 hours per week: 10 hours for live classes (evenings/weekends) and 5-10 hours for practice and assignments. Our schedule is designed for working professionals.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-laptop"></i> What are the technical requirements?</h3>
+                    <p>A laptop with at least 8GB RAM, stable internet connection (minimum 5Mbps), and willingness to learn. We'll guide you through all software installations.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-briefcase"></i> Is the internship guaranteed?</h3>
+                    <p>Yes! Every student gets a 3-month internship with StockSmartAI upon completing the training phase. You'll work on real projects and build your portfolio.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-dollar-sign"></i> Can I really earn in dollars from Nigeria?</h3>
+                    <p>Absolutely! Our graduates work remotely for international companies. With the right skills and portfolio, you can earn $20-50/hour as a freelancer or $40K-80K annually in full-time remote roles.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-certificate"></i> Will I get a certificate?</h3>
+                    <p>Yes! You'll receive a BTA completion certificate plus internship completion certificate from StockSmartAI. For Cybersecurity, we also prepare you for CompTIA Security+ certification.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-undo"></i> What if I'm not satisfied?</h3>
+                    <p>We offer a 100% money-back guarantee within the first 2 weeks. If you're not satisfied with the training quality, we'll refund your full payment. No questions asked.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-users"></i> What's the class size?</h3>
+                    <p>We keep cohorts small (max 50 students) to ensure personalized attention and mentorship. This allows for interactive sessions and direct access to instructors.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Download Form Modal -->
+    <div id="downloadModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center;">
+        <div style="background: white; padding: 3rem; border-radius: 20px; max-width: 500px; width: 90%; position: relative;">
+            <button onclick="closeDownloadForm()" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #64748b;">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 style="margin-bottom: 1rem; color: #1a1a2e;">Download <span id="curriculumName"></span> Curriculum</h2>
+            <p style="margin-bottom: 2rem; color: #64748b;">Enter your details to receive the complete curriculum guide</p>
+            
+            <form id="downloadForm" action="https://formspree.io/f/movygqnj" method="POST">
+                <input type="hidden" name="curriculum" id="curriculumType">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> Full Name *</label>
+                    <input type="text" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> Email Address *</label>
+                    <input type="email" name="email" required placeholder="your.email@example.com">
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-download"></i> Download Curriculum
+                </button>
+            </form>
+        </div>
+    </div>
+
     <!-- ABOUT PAGE -->
     <div id="about" class="page">
         <section class="hero">
@@ -1924,9 +2111,9 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <a href="#" onclick="showPage('about')">About Us</a>
+                <a href="#" onclick="showPage('resources')">Free Resources</a>
                 <a href="#" onclick="showPage('pricing')">Pricing</a>
                 <a href="#" onclick="showPage('enroll')">Enroll Now</a>
-                <a href="#">Blog (Coming Soon)</a>
             </div>
 
             <div class="footer-section">
@@ -2066,6 +2253,54 @@
         // Show notification every 15-30 seconds
         setInterval(showRecentSignup, Math.random() * 15000 + 15000);
         setTimeout(showRecentSignup, 5000); // First one after 5 seconds
+
+        // Curriculum download links
+        const curriculumLinks = {
+            'DevOps': 'https://drive.google.com/file/d/1wHcib4kFvQpDttnwX4tNat866FMhdT3C/view?usp=sharing',
+            'Software Engineering': 'https://drive.google.com/file/d/1-Fzy6_Ftzl1BaLpUDd0_FKEFw6QOAXhr/view?usp=sharing',
+            'Cybersecurity': 'https://drive.google.com/file/d/150nf_BLF9RISvNqUfecSOINcosaIpZV9/view?usp=sharing',
+            'Data Science': 'https://drive.google.com/file/d/1fdyObwpKa0t4EWlxUigjL1XUoJx432ic/view?usp=sharing'
+        };
+
+        // Download Form Functions
+        function showDownloadForm(curriculum) {
+            document.getElementById('downloadModal').style.display = 'flex';
+            document.getElementById('curriculumName').textContent = curriculum;
+            document.getElementById('curriculumType').value = curriculum;
+        }
+
+        function closeDownloadForm() {
+            document.getElementById('downloadModal').style.display = 'none';
+        }
+
+        // Download form submission
+        document.getElementById('downloadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const curriculum = document.getElementById('curriculumType').value;
+            const downloadLink = curriculumLinks[curriculum];
+            
+            // Submit to Formspree to capture lead
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    // Open download link if available
+                    if (downloadLink) {
+                        window.open(downloadLink, '_blank');
+                        alert('Thank you! The curriculum is opening in a new tab. Check your email for future updates!');
+                    } else {
+                        alert('Thank you! We\'ll send the curriculum to your email within 24 hours.');
+                    }
+                    closeDownloadForm();
+                    this.reset();
+                } else {
+                    alert('Oops! There was a problem. Please try again.');
+                }
+            });
+        });
     </script>
 </body>
 </html>
