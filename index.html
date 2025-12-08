@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn tech skills, build real projects, and earn in dollars from anywhere. Join Africa's premier live tech academy. 6-month programs in DevOps, Software Engineering, Cybersecurity & Data Science. 100% live classes + 3-month internship. Enroll now!">
+    <meta name="keywords" content="tech bootcamp Africa, learn coding Nigeria, DevOps training, software engineering course, cybersecurity certification, data science bootcamp, remote tech jobs, earn in dollars">
     <title>Borderless Tech Academy - Learn. Build. Earn in Dollars - From Anywhere</title>
     
     <!-- Google tag (gtag.js) -->
@@ -13,6 +15,21 @@
         gtag('js', new Date());
         gtag('config', 'G-RQ1M56GVE9');
     </script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID'); // Replace with actual Facebook Pixel ID
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -1222,6 +1239,42 @@
             color: #64748b;
             line-height: 1.8;
         }
+
+
+
+        .newsletter-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .newsletter-section h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .newsletter-form button {
+            background: #ffd700;
+            color: #1a1a2e;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -1275,6 +1328,8 @@
             <i class="fas fa-phone"></i>
         </a>
     </div>
+
+
 
     <!-- HOME PAGE -->
     <div id="home" class="page active">
@@ -1510,7 +1565,7 @@
             <div class="program-grid">
                 <div class="program-card">
                     <div class="program-image">
-                        <img src="devops-pics.png" alt="DevOps Engineering">
+                        <img src="devops-pics.png" alt="DevOps Engineering" loading="lazy">
                         <div class="overlay">
                             <div class="icon"><i class="fas fa-cogs"></i></div>
                         </div>
@@ -1521,13 +1576,13 @@
                     </div>
                     <div class="program-body">
                         <p>Master CI/CD pipelines, Docker, Kubernetes, AWS, and infrastructure automation. Become a highly sought-after DevOps engineer.</p>
-                        <button class="enroll-btn" onclick="showPage('programs')">Learn More</button>
+                        <button class="enroll-btn" onclick="showPage('resources')">Download Free Curriculum</button>
                     </div>
                 </div>
 
                 <div class="program-card">
                     <div class="program-image">
-                        <img src="master-software-eng.png" alt="Software Engineering">
+                        <img src="master-software-eng.png" alt="Software Engineering" loading="lazy">
                         <div class="overlay">
                             <div class="icon"><i class="fas fa-code"></i></div>
                         </div>
@@ -1538,13 +1593,13 @@
                     </div>
                     <div class="program-body">
                         <p>Full-stack development with React, Node.js, MongoDB, and modern JavaScript. Build scalable web applications.</p>
-                        <button class="enroll-btn" onclick="showPage('programs')">Learn More</button>
+                        <button class="enroll-btn" onclick="showPage('resources')">Download Free Curriculum</button>
                     </div>
                 </div>
 
                 <div class="program-card">
                     <div class="program-image">
-                        <img src="cyber-image.png" alt="Cybersecurity">
+                        <img src="cyber-image.png" alt="Cybersecurity" loading="lazy">
                         <div class="overlay">
                             <div class="icon"><i class="fas fa-shield-alt"></i></div>
                         </div>
@@ -1555,7 +1610,7 @@
                     </div>
                     <div class="program-body">
                         <p>Ethical hacking, cloud security, SOC analysis, and penetration testing. Protect organizations from cyber threats.</p>
-                        <button class="enroll-btn" onclick="showPage('programs')">Learn More</button>
+                        <button class="enroll-btn" onclick="showPage('resources')">Download Free Curriculum</button>
                     </div>
                 </div>
             </div>
@@ -1594,7 +1649,7 @@
             <div class="program-grid">
                 <div class="program-card">
                     <div class="program-image">
-                        <img src="devops-pics.png" alt="DevOps Engineering">
+                        <img src="devops-pics.png" alt="DevOps Engineering" loading="lazy">
                         <div class="overlay">
                             <div class="icon"><i class="fas fa-cogs"></i></div>
                         </div>
@@ -1615,13 +1670,13 @@
                         </ul>
                         <h4>Career Outcomes:</h4>
                         <p>DevOps Engineer, Cloud Engineer, Site Reliability Engineer, Infrastructure Engineer</p>
-                        <button class="enroll-btn" onclick="showPage('enroll')">Enroll Now</button>
+                        <button class="enroll-btn" onclick="window.open('https://wa.me/2348103734621?text=Hi!%20I%27d%20like%20to%20book%20a%20free%20consultation%20about%20the%20DevOps%20program', '_blank')">Book Free Consultation</button>
                     </div>
                 </div>
 
                 <div class="program-card">
                     <div class="program-image">
-                        <img src="master-software-eng.png" alt="Software Engineering">
+                        <img src="master-software-eng.png" alt="Software Engineering" loading="lazy">
                         <div class="overlay">
                             <div class="icon"><i class="fas fa-code"></i></div>
                         </div>
@@ -1642,13 +1697,13 @@
                         </ul>
                         <h4>Career Outcomes:</h4>
                         <p>Full-Stack Developer, Frontend Developer, Backend Developer, Software Engineer</p>
-                        <button class="enroll-btn" onclick="showPage('enroll')">Enroll Now</button>
+                        <button class="enroll-btn" onclick="window.open('https://wa.me/2348103734621?text=Hi!%20I%27d%20like%20to%20book%20a%20free%20consultation%20about%20the%20Software%20Engineering%20program', '_blank')">Book Free Consultation</button>
                     </div>
                 </div>
 
                 <div class="program-card">
                     <div class="program-image">
-                        <img src="cyber-image.png" alt="Cybersecurity">
+                        <img src="cyber-image.png" alt="Cybersecurity" loading="lazy">
                         <div class="overlay">
                             <div class="icon"><i class="fas fa-shield-alt"></i></div>
                         </div>
@@ -1670,13 +1725,13 @@
                         </ul>
                         <h4>Career Outcomes:</h4>
                         <p>Security Analyst, Penetration Tester, SOC Analyst, Security Engineer</p>
-                        <button class="enroll-btn" onclick="showPage('enroll')">Enroll Now</button>
+                        <button class="enroll-btn" onclick="window.open('https://wa.me/2348103734621?text=Hi!%20I%27d%20like%20to%20book%20a%20free%20consultation%20about%20the%20Cybersecurity%20program', '_blank')">Book Free Consultation</button>
                     </div>
                 </div>
 
                 <div class="program-card">
                     <div class="program-image">
-                        <img src="master-cloud.png" alt="Data Science">
+                        <img src="master-cloud.png" alt="Data Science" loading="lazy">
                         <div class="overlay">
                             <div class="icon"><i class="fas fa-chart-line"></i></div>
                         </div>
@@ -1697,7 +1752,7 @@
                         </ul>
                         <h4>Career Outcomes:</h4>
                         <p>Data Scientist, ML Engineer, Data Analyst, AI Specialist</p>
-                        <button class="enroll-btn" onclick="showPage('enroll')">Enroll Now</button>
+                        <button class="enroll-btn" onclick="window.open('https://wa.me/2348103734621?text=Hi!%20I%27d%20like%20to%20book%20a%20free%20consultation%20about%20the%20Data%20Science%20program', '_blank')">Book Free Consultation</button>
                     </div>
                 </div>
             </div>
@@ -1898,7 +1953,7 @@
                 </div>
 
                 <div class="about-image">
-                    <img src="girlll.jpeg" alt="African tech professional">
+                    <img src="girlll.jpeg" alt="African tech professional" loading="lazy">
                 </div>
             </div>
 
@@ -1925,21 +1980,21 @@
                 <div class="testimonial-card">
                     <p>"BTA gave me the skills and confidence to land my first remote job. I'm now working with a US-based startup from Lagos, earning in dollars!"</p>
                     <div class="testimonial-author">
-                        <img src="Skills-i.jpeg" alt="Student">
+                        <img src="Skills-i.jpeg" alt="Student" loading="lazy">
                         <span>- Future Alumni</span>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <p>"The live classes and real internship made all the difference. I learned by doing, not just watching videos. The mentorship was incredible."</p>
                     <div class="testimonial-author">
-                        <img src="bta-image-5.jpeg" alt="Student">
+                        <img src="bta-image-5.jpeg" alt="Student" loading="lazy">
                         <span>- Future Alumni</span>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <p>"As someone from the diaspora, BTA helped me reconnect with African tech talent while upgrading my skills for the global market."</p>
                     <div class="testimonial-author">
-                        <img src="girlll.jpeg" alt="Student">
+                        <img src="girlll.jpeg" alt="Student" loading="lazy">
                         <span>- Future Alumni</span>
                     </div>
                 </div>
@@ -2112,6 +2167,14 @@
             <div class="footer-section">
                 <h3>Borderless Tech Academy</h3>
                 <p>Making Africans globally employable through practical, borderless tech education.</p>
+                <div class="newsletter-section" style="margin-top: 1.5rem;">
+                    <h3 style="font-size: 1.2rem;">📧 Get Course Updates</h3>
+                    <form class="newsletter-form" action="https://formspree.io/f/movygqnj" method="POST">
+                        <input type="hidden" name="form_type" value="newsletter">
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
                 <p style="margin-top: 1rem;"><i class="fas fa-map-marker-alt"></i> Remote-first | Nigeria HQ</p>
                 <p><i class="fas fa-calendar-alt"></i> Launch: January 2026</p>
             </div>
@@ -2296,14 +2359,12 @@
             const curriculum = document.getElementById('curriculumType').value;
             const downloadLink = curriculumLinks[curriculum];
             
-            // Submit to Formspree to capture lead
             fetch(this.action, {
                 method: 'POST',
                 body: formData,
                 headers: { 'Accept': 'application/json' }
             }).then(response => {
                 if (response.ok) {
-                    // Open download link if available
                     if (downloadLink) {
                         window.open(downloadLink, '_blank');
                         alert('Thank you! The curriculum is opening in a new tab. Check your email for future updates!');
@@ -2317,6 +2378,8 @@
                 }
             });
         });
+
+
     </script>
 </body>
 </html>
