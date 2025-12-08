@@ -729,6 +729,101 @@
             font-size: 1.5rem;
             color: #1a1a2e;
             cursor: pointer;
+            z-index: 1001;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            display: block;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 1rem;
+            color: #1a1a2e;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .mobile-menu a:hover {
+            background: #f8fafc;
+            color: #667eea;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Mobile Sticky CTA */
+        .mobile-sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 1rem;
+            z-index: 1000;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+        }
+
+        .mobile-sticky-cta button {
+            width: 100%;
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 1rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        /* Mobile Contact Buttons */
+        .mobile-contact-btns {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 15px;
+            z-index: 999;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .mobile-contact-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+
+        .mobile-contact-btn.whatsapp {
+            background: #25D366;
+        }
+
+        .mobile-contact-btn.phone {
+            background: #667eea;
         }
 
         /* Responsive Design */
@@ -741,12 +836,28 @@
                 display: block;
             }
 
+            .mobile-sticky-cta {
+                display: block;
+            }
+
+            .mobile-contact-btns {
+                display: flex;
+            }
+
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .hero p {
+                font-size: 1rem;
+            }
+
+            .guarantee-hero h3 {
                 font-size: 1.1rem;
+            }
+
+            .guarantee-hero p {
+                font-size: 0.9rem;
             }
 
             .about-content {
@@ -778,13 +889,42 @@
             }
 
             .hero {
-                padding: 4rem 1rem 3rem;
+                padding: 3rem 1rem 2rem;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero p {
+                font-size: 0.95rem;
             }
 
             .programs,
             .about,
             .contact {
                 padding: 3rem 1rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .countdown-timer {
+                gap: 0.5rem;
+            }
+
+            .countdown-item {
+                padding: 0.75rem;
+                min-width: 60px;
+            }
+
+            .countdown-item .number {
+                font-size: 1.5rem;
+            }
+
+            .countdown-item .label {
+                font-size: 0.75rem;
             }
         }
 
@@ -1069,11 +1209,36 @@
                 <li><a onclick="showPage('pricing')">Pricing</a></li>
                 <li><button class="cta-btn" onclick="showPage('enroll')">Enroll Now</button></li>
             </ul>
-            <button class="mobile-menu-btn">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a onclick="showPage('home'); toggleMobileMenu();">Home</a>
+            <a onclick="showPage('programs'); toggleMobileMenu();">Programs</a>
+            <a onclick="showPage('about'); toggleMobileMenu();">About</a>
+            <a onclick="showPage('pricing'); toggleMobileMenu();">Pricing</a>
+            <a onclick="showPage('enroll'); toggleMobileMenu();" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px; text-align: center;">Enroll Now</a>
+        </div>
     </nav>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <button onclick="showPage('enroll')">
+            <i class="fas fa-rocket"></i> Enroll Now - Save 10%
+        </button>
+    </div>
+
+    <!-- Mobile Contact Buttons -->
+    <div class="mobile-contact-btns">
+        <a href="https://wa.me/2348103734621" class="mobile-contact-btn whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+2348103734621" class="mobile-contact-btn phone">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
 
     <!-- HOME PAGE -->
     <div id="home" class="page active">
@@ -1829,11 +1994,16 @@
             observer.observe(el);
         });
 
-        // Mobile menu toggle (for future implementation)
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            // Mobile menu functionality can be added here
-            console.log('Mobile menu clicked');
-        });
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuBtn = document.getElementById('mobileMenuBtn');
+            mobileMenu.classList.toggle('active');
+            const icon = menuBtn.querySelector('i');
+            icon.className = mobileMenu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+        }
+
+        document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
 
         // Countdown Timer (Christmas Day 2025)
         function updateCountdown() {
