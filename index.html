@@ -951,6 +951,103 @@
             .countdown-item .number { font-size: 2rem; }
             .recent-signup { left: 10px; right: 10px; max-width: none; }
         }
+
+        /* Value Proposition Elements */
+        .comparison-table {
+            max-width: 1200px;
+            margin: 3rem auto;
+            overflow-x: auto;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .comparison-table .highlight-col {
+            background: #f0f4ff;
+            font-weight: 600;
+        }
+
+        .check { color: #10b981; font-size: 1.5rem; }
+        .cross { color: #ef4444; font-size: 1.5rem; }
+
+        .roi-calculator {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+
+        .roi-result {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .roi-result h3 {
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+
+        .success-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border-left: 5px solid #667eea;
+        }
+
+        .metric-card .number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .guarantee-hero {
+            background: rgba(255,255,255,0.15);
+            padding: 1.5rem 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .comparison-table { font-size: 0.9rem; }
+            .roi-calculator { padding: 2rem; }
+        }
     </style>
 </head>
 <body>
@@ -1007,15 +1104,42 @@
                 </div>
                 <p style="font-size: 1rem; margin-bottom: 2rem;">Until Christmas Special Ends (10% OFF)</p>
                 
+                <!-- Money-Back Guarantee -->
+                <div class="guarantee-hero">
+                    <i class="fas fa-shield-alt" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">100% Money-Back Guarantee</h3>
+                    <p style="font-size: 1rem; opacity: 0.95;">Not satisfied within the first 2 weeks? Get a full refund. No questions asked.</p>
+                </div>
+                
                 <button class="hero-cta" onclick="showPage('enroll')">
                     Start Your Journey <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
         </section>
 
-        <!-- Stats Section -->
+        <!-- Success Metrics Section -->
         <section class="stats">
-            <div class="stats-container">
+            <h2 class="section-title" style="margin-bottom: 3rem;">Our <span class="gradient-text">Impact</span></h2>
+            <div class="success-metrics">
+                <div class="metric-card">
+                    <span class="number">300%</span>
+                    <p>Average Salary Increase</p>
+                </div>
+                <div class="metric-card">
+                    <span class="number">85%</span>
+                    <p>Job Placement Rate</p>
+                </div>
+                <div class="metric-card">
+                    <span class="number">$25/hr</span>
+                    <p>Average Starting Rate</p>
+                </div>
+                <div class="metric-card">
+                    <span class="number">2-3</span>
+                    <p>Months to ROI</p>
+                </div>
+            </div>
+
+            <div class="stats-container" style="margin-top: 4rem;">
                 <div class="stat-card">
                     <div class="icon"><i class="fas fa-clock"></i></div>
                     <h3>6</h3>
@@ -1036,6 +1160,105 @@
                     <h3>Global</h3>
                     <p>Career Opportunities</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- ROI Calculator -->
+        <section class="programs">
+            <h2 class="section-title">Calculate Your <span class="gradient-text">Return on Investment</span></h2>
+            <p class="section-subtitle">See how quickly you can earn back your investment</p>
+            
+            <div class="roi-calculator">
+                <h3 style="margin-bottom: 2rem; text-align: center;">Investment Calculator</h3>
+                <div class="roi-result">
+                    <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">At $25/hour remote rate, you'll earn back your investment in:</p>
+                    <h3>2-3 Months</h3>
+                    <p style="margin-top: 1rem; font-size: 1rem;">Investment: ₦360K (≈$400) | Monthly Earnings: $4,000+ | ROI: 1000%+</p>
+                </div>
+                <div style="margin-top: 2rem; padding: 1.5rem; background: #f8fafc; border-radius: 10px;">
+                    <h4 style="margin-bottom: 1rem;">Real Career Trajectory:</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0;"><strong>Month 1-3:</strong> Complete training + internship</li>
+                        <li style="padding: 0.5rem 0;"><strong>Month 4-6:</strong> Land first remote job ($20-30/hr)</li>
+                        <li style="padding: 0.5rem 0;"><strong>Year 1:</strong> Earn $40,000-60,000 annually</li>
+                        <li style="padding: 0.5rem 0;"><strong>Year 2+:</strong> Senior roles ($80,000-120,000+)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="programs" style="background: #f8fafc; margin: 0 -2rem; padding: 6rem 2rem;">
+            <h2 class="section-title">Why BTA Stands Out</h2>
+            <p class="section-subtitle">Compare us with other options</p>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="highlight-col">BTA</th>
+                            <th>Other Bootcamps</th>
+                            <th>Self-Learning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Live Instructor-Led Classes</strong></td>
+                            <td class="highlight-col"><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Real 3-Month Internship</strong></td>
+                            <td class="highlight-col"><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Job Placement Support</strong></td>
+                            <td class="highlight-col"><span class="check">✓</span></td>
+                            <td><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Portfolio Development</strong></td>
+                            <td class="highlight-col"><span class="check">✓</span></td>
+                            <td>Limited</td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mentorship from Industry Experts</strong></td>
+                            <td class="highlight-col"><span class="check">✓</span></td>
+                            <td>Limited</td>
+                            <td><span class="cross">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Money-Back Guarantee</strong></td>
+                            <td class="highlight-col"><span class="check">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Flexible Payment Plans</strong></td>
+                            <td class="highlight-col"><span class="check">✓</span></td>
+                            <td>Limited</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cost</strong></td>
+                            <td class="highlight-col">₦360K ($400)</td>
+                            <td>₦1M+ ($1,500+)</td>
+                            <td>Free (but no structure)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Time to Job-Ready</strong></td>
+                            <td class="highlight-col">6 Months</td>
+                            <td>6-12 Months</td>
+                            <td>12-24+ Months</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -1428,7 +1651,7 @@
                 </div>
 
                 <div class="guarantee-badge" style="margin-top: 3rem;">
-                    <i class="fas fa-shield-alt"></i> 100% Satisfaction Guarantee: If you're not satisfied with the training quality within the first 2 weeks, we'll provide a full refund. No questions asked.
+                    <i class="fas fa-shield-alt"></i> <strong>100% Money-Back Guarantee:</strong> Not satisfied within the first 2 weeks? Get a full refund. No questions asked. Zero risk.
                 </div>
             </div>
         </section>
