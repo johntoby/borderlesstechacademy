@@ -305,6 +305,16 @@
             gap: 2.5rem;
         }
 
+        .program-grid .program-card:nth-child(4) {
+            grid-column: 2 / 3;
+        }
+
+        @media (max-width: 1200px) {
+            .program-grid .program-card:nth-child(4) {
+                grid-column: auto;
+            }
+        }
+
         .program-card {
             background: white;
             border-radius: 20px;
@@ -1373,6 +1383,82 @@
             </div>
         </section>
 
+        <!-- Programs Preview -->
+        <section class="programs">
+            <h2 class="section-title">Our Programs</h2>
+            <p class="section-subtitle">Choose your path to a global tech career</p>
+            
+            <div class="program-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="devops-pics.png" alt="DevOps Engineering" loading="lazy">
+                        <div class="overlay">
+                            <div class="icon"><i class="fas fa-cogs"></i></div>
+                        </div>
+                    </div>
+                    <div class="program-header">
+                        <h3>Cloud & DevOps Engineering</h3>
+                        <p class="duration">6 Months | Live Online</p>
+                    </div>
+                    <div class="program-body">
+                        <p>Master CI/CD pipelines, Docker, Kubernetes, AWS, and infrastructure automation. Become a highly sought-after DevOps engineer.</p>
+                        <button class="enroll-btn" onclick="showPage('resources')">Download Free Curriculum</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="master-software-eng.png" alt="Software Engineering" loading="lazy">
+                        <div class="overlay">
+                            <div class="icon"><i class="fas fa-code"></i></div>
+                        </div>
+                    </div>
+                    <div class="program-header">
+                        <h3>Software Engineering</h3>
+                        <p class="duration">6 Months | Live Online</p>
+                    </div>
+                    <div class="program-body">
+                        <p>Full-stack development with React, Node.js, MongoDB, and modern JavaScript. Build scalable web applications.</p>
+                        <button class="enroll-btn" onclick="showPage('resources')">Download Free Curriculum</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="cyber-image.png" alt="Cybersecurity" loading="lazy">
+                        <div class="overlay">
+                            <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                        </div>
+                    </div>
+                    <div class="program-header">
+                        <h3>Cybersecurity</h3>
+                        <p class="duration">6 Months | Live Online</p>
+                    </div>
+                    <div class="program-body">
+                        <p>Ethical hacking, cloud security, SOC analysis, and penetration testing. Protect organizations from cyber threats.</p>
+                        <button class="enroll-btn" onclick="showPage('resources')">Download Free Curriculum</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="master-cloud.png" alt="Data Science" loading="lazy">
+                        <div class="overlay">
+                            <div class="icon"><i class="fas fa-chart-line"></i></div>
+                        </div>
+                    </div>
+                    <div class="program-header">
+                        <h3>Data Science & AI</h3>
+                        <p class="duration">6 Months | Live Online</p>
+                    </div>
+                    <div class="program-body">
+                        <p>Python, Machine Learning, Deep Learning, AI integration, and data visualization - complete learning path included.</p>
+                        <button class="enroll-btn" onclick="showPage('resources')">Download Free Curriculum</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Success Metrics Section -->
         <section class="stats">
             <h2 class="section-title" style="margin-bottom: 3rem;">Our <span class="gradient-text">Impact</span></h2>
@@ -1557,64 +1643,7 @@
             </div>
         </section>
 
-        <!-- Programs Preview -->
-        <section class="programs" style="background: #f8fafc; margin: 0 -2rem; padding: 6rem 2rem;">
-            <h2 class="section-title">Our Programs</h2>
-            <p class="section-subtitle">Choose your path to a global tech career</p>
-            
-            <div class="program-grid">
-                <div class="program-card">
-                    <div class="program-image">
-                        <img src="devops-pics.png" alt="DevOps Engineering" loading="lazy">
-                        <div class="overlay">
-                            <div class="icon"><i class="fas fa-cogs"></i></div>
-                        </div>
-                    </div>
-                    <div class="program-header">
-                        <h3>Cloud & DevOps Engineering</h3>
-                        <p class="duration">6 Months | Live Online</p>
-                    </div>
-                    <div class="program-body">
-                        <p>Master CI/CD pipelines, Docker, Kubernetes, AWS, and infrastructure automation. Become a highly sought-after DevOps engineer.</p>
-                        <button class="enroll-btn" onclick="showPage('resources')">Download Free Curriculum</button>
-                    </div>
-                </div>
 
-                <div class="program-card">
-                    <div class="program-image">
-                        <img src="master-software-eng.png" alt="Software Engineering" loading="lazy">
-                        <div class="overlay">
-                            <div class="icon"><i class="fas fa-code"></i></div>
-                        </div>
-                    </div>
-                    <div class="program-header">
-                        <h3>Software Engineering</h3>
-                        <p class="duration">6 Months | Live Online</p>
-                    </div>
-                    <div class="program-body">
-                        <p>Full-stack development with React, Node.js, MongoDB, and modern JavaScript. Build scalable web applications.</p>
-                        <button class="enroll-btn" onclick="showPage('resources')">Download Free Curriculum</button>
-                    </div>
-                </div>
-
-                <div class="program-card">
-                    <div class="program-image">
-                        <img src="cyber-image.png" alt="Cybersecurity" loading="lazy">
-                        <div class="overlay">
-                            <div class="icon"><i class="fas fa-shield-alt"></i></div>
-                        </div>
-                    </div>
-                    <div class="program-header">
-                        <h3>Cybersecurity</h3>
-                        <p class="duration">6 Months | Live Online</p>
-                    </div>
-                    <div class="program-body">
-                        <p>Ethical hacking, cloud security, SOC analysis, and penetration testing. Protect organizations from cyber threats.</p>
-                        <button class="enroll-btn" onclick="showPage('resources')">Download Free Curriculum</button>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- CTA Section -->
         <section class="hero" style="padding: 4rem 2rem;">
@@ -1981,21 +2010,21 @@
                     <p>"BTA gave me the skills and confidence to land my first remote job. I'm now working with a US-based startup from Lagos, earning in dollars!"</p>
                     <div class="testimonial-author">
                         <img src="Skills-i.jpeg" alt="Student" loading="lazy">
-                        <span>- Future Alumni</span>
+                        <span>- Michael A</span>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <p>"The live classes and real internship made all the difference. I learned by doing, not just watching videos. The mentorship was incredible."</p>
                     <div class="testimonial-author">
                         <img src="bta-image-5.jpeg" alt="Student" loading="lazy">
-                        <span>- Future Alumni</span>
+                        <span>- Happiness U</span>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <p>"As someone from the diaspora, BTA helped me reconnect with African tech talent while upgrading my skills for the global market."</p>
                     <div class="testimonial-author">
                         <img src="girlll.jpeg" alt="Student" loading="lazy">
-                        <span>- Future Alumni</span>
+                        <span>- Uche S</span>
                     </div>
                 </div>
             </div>
