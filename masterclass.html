@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FREE Masterclass: How to Land Your First Remote Tech Role and Start Earning in Dollars. December 20th, 2025 at 10am WAT. Register now!">
+    <title>FREE Masterclass: Land Your First Remote Tech Role | Borderless Tech Academy</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQ1M56GVE9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RQ1M56GVE9');
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 50%, #2d1b69 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+                linear-gradient(45deg, transparent 30%, rgba(0, 255, 255, 0.05) 50%, transparent 70%);
+            animation: techPulse 4s ease-in-out infinite;
+        }
+
+        @keyframes techPulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 30%, #2d1b69 70%, #4c1d95 100%);
+            color: white;
+            padding: 4rem 0 6rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(0, 255, 127, 0.1) 0%, transparent 60%),
+                linear-gradient(45deg, transparent 20%, rgba(0, 255, 255, 0.05) 40%, transparent 60%, rgba(255, 0, 255, 0.05) 80%, transparent 100%);
+            animation: futuristicFlow 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 98px,
+                    rgba(0, 255, 255, 0.03) 100px
+                ),
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 98px,
+                    rgba(255, 0, 255, 0.03) 100px
+                );
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes futuristicFlow {
+            0%, 100% {
+                background: 
+                    radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.15) 0%, transparent 40%),
+                    radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.15) 0%, transparent 40%),
+                    radial-gradient(circle at 50% 50%, rgba(0, 255, 127, 0.1) 0%, transparent 60%);
+            }
+            50% {
+                background: 
+                    radial-gradient(circle at 90% 20%, rgba(0, 255, 255, 0.2) 0%, transparent 40%),
+                    radial-gradient(circle at 10% 80%, rgba(255, 0, 255, 0.2) 0%, transparent 40%),
+                    radial-gradient(circle at 50% 50%, rgba(0, 255, 127, 0.15) 0%, transparent 60%);
+            }
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(100px, 100px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .free-badge {
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .event-details {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 3rem auto;
+            max-width: 600px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .event-details h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+
+        .event-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-item i {
+            font-size: 2rem;
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-item p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .register-btn {
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 1.2rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .register-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.4);
+        }
+
+        /* What You'll Learn */
+        .learn-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .learn-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 25% 25%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255, 0, 255, 0.1) 0%, transparent 50%);
+            animation: techPulse 6s ease-in-out infinite;
+        }
+
+        .learn-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        .learn-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .learn-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .learn-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .learn-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 255, 255, 0.5);
+            box-shadow: 0 15px 40px rgba(0, 255, 255, 0.2);
+        }
+
+        .learn-card:hover::before {
+            left: 100%;
+        }
+
+        .learn-card i {
+            font-size: 2.5rem;
+            color: #00ffff;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        .learn-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .learn-card p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Registration Form */
+        .registration {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 50%, #2d1b69 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .registration::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 70%, rgba(255, 0, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(0, 255, 255, 0.15) 0%, transparent 50%);
+            animation: techPulse 5s ease-in-out infinite;
+        }
+
+        .registration h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.9);
+            color: #1a1a2e;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 1.2rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .event-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Borderless Tech Academy</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="free-badge">FREE MASTERCLASS</div>
+                <h1>How to Land Your First Remote Tech Role</h1>
+                <p class="subtitle">Start Earning in Dollars from Anywhere in the World</p>
+                
+                <div class="event-details">
+                    <h3>Event Details</h3>
+                    <div class="event-info">
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <h4>Date</h4>
+                            <p>Saturday, December 20th, 2025</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <h4>Time</h4>
+                            <p>10:00 AM WAT</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-laptop"></i>
+                            <h4>Format</h4>
+                            <p>Live Online Session</p>
+                        </div>
+                    </div>
+                    <a href="https://luma.com/am7w3q2a" target="_blank" class="register-btn">Reserve Your Spot - FREE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="learn-section">
+        <div class="container">
+            <h2>What You'll Learn</h2>
+            <div class="learn-grid">
+                <div class="learn-card">
+                    <i class="fas fa-search"></i>
+                    <h3>How to Find Remote Tech Jobs</h3>
+                    <p>Discover the best platforms and strategies to find high-paying remote tech opportunities worldwide.</p>
+                </div>
+                <div class="learn-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Craft a Winning Resume</h3>
+                    <p>Learn how to create a tech resume that stands out and gets you interviews with international companies.</p>
+                </div>
+                <div class="learn-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Ace Technical Interviews</h3>
+                    <p>Master the art of technical interviews and learn what global employers are really looking for.</p>
+                </div>
+                <div class="learn-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Negotiate Your Salary</h3>
+                    <p>Understand how to negotiate competitive salaries and get paid in dollars for your tech skills.</p>
+                </div>
+                <div class="learn-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Work Remotely Like a Pro</h3>
+                    <p>Essential tips for thriving in a remote work environment and building a global career.</p>
+                </div>
+                <div class="learn-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Fast-Track Your Career</h3>
+                    <p>Proven strategies to accelerate your tech career and achieve financial freedom faster.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="registration" id="register">
+        <div class="container">
+            <h2>Register for FREE</h2>
+            <div class="form-container">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; text-align: center;">Click the button below to register on our secure Luma event page</p>
+                <a href="https://luma.com/am7w3q2a" target="_blank" class="submit-btn" style="display: block; text-align: center; text-decoration: none;">
+                    <i class="fas fa-rocket"></i> Register Now - It's FREE!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Borderless Tech Academy. All rights reserved.</p>
+            <p>Questions? Contact us at <a href="mailto:info@borderlesstechacademy.com" style="color: #ffd700;">info@borderlesstechacademy.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Registration link tracking
+        document.querySelectorAll('a[href="https://luma.com/am7w3q2a"]').forEach(link => {
+            link.addEventListener('click', function() {
+                gtag('event', 'masterclass_registration_click', {
+                    'event_category': 'engagement',
+                    'event_label': 'December 2025 Masterclass Luma'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
