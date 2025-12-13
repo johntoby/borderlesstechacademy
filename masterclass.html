@@ -144,25 +144,17 @@
         .hero-content {
             position: relative;
             z-index: 2;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
+            text-align: center;
         }
 
-        .hero-text {
-            text-align: left;
+        /* Image Section */
+        .image-section {
+            background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 30%, #2d1b69 70%, #4c1d95 100%);
+            padding: 2rem 0;
+            text-align: center;
         }
 
-        .hero-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-image img {
+        .image-container img {
             max-width: 100%;
             height: auto;
             border-radius: 20px;
@@ -170,8 +162,46 @@
             transition: transform 0.3s ease;
         }
 
-        .hero-image img:hover {
+        .image-container img:hover {
             transform: scale(1.05);
+        }
+
+        /* Title Section */
+        .title-section {
+            background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 30%, #2d1b69 70%, #4c1d95 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.15) 0%, transparent 40%);
+            animation: futuristicFlow 8s ease-in-out infinite;
+        }
+
+        .title-section h1 {
+            position: relative;
+            z-index: 2;
+        }
+
+        .title-section .subtitle {
+            position: relative;
+            z-index: 2;
+        }
+
+        .title-section .event-details {
+            position: relative;
+            z-index: 2;
         }
 
         .free-badge {
@@ -438,20 +468,11 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            .hero-text {
-                text-align: center;
-            }
-            
-            .hero h1 {
+            .title-section h1 {
                 font-size: 2.5rem;
             }
             
-            .hero .subtitle {
+            .title-section .subtitle {
                 font-size: 1.1rem;
             }
             
@@ -475,36 +496,44 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <div class="free-badge">FREE MASTERCLASS</div>
-                    <h1>How to Land Your First Remote Tech Role</h1>
-                    <p class="subtitle">Start Earning in Dollars from Anywhere in the World</p>
-                    
-                    <div class="event-details">
-                        <h3>Event Details</h3>
-                        <div class="event-info">
-                            <div class="info-item">
-                                <i class="fas fa-calendar"></i>
-                                <h4>Date</h4>
-                                <p>Saturday, December 20th, 2025</p>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-clock"></i>
-                                <h4>Time</h4>
-                                <p>10:00 AM WAT</p>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-laptop"></i>
-                                <h4>Format</h4>
-                                <p>Live Online Session</p>
-                            </div>
-                        </div>
-                        <a href="https://luma.com/am7w3q2a" target="_blank" class="register-btn">Reserve Your Spot - FREE</a>
+                <div class="free-badge">FREE MASTERCLASS</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="image-section">
+        <div class="container">
+            <div class="image-container">
+                <img src="masterclass-flyer3.jpg" alt="Masterclass: How to Land Your First Remote Tech Role" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <section class="title-section">
+        <div class="container">
+            <h1>How to Land Your First Remote Tech Role</h1>
+            <p class="subtitle">Start Earning in Dollars from Anywhere in the World</p>
+            
+            <div class="event-details">
+                <h3>Event Details</h3>
+                <div class="event-info">
+                    <div class="info-item">
+                        <i class="fas fa-calendar"></i>
+                        <h4>Date</h4>
+                        <p>Saturday, December 20th, 2025</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>Time</h4>
+                        <p>10:00 AM WAT</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-laptop"></i>
+                        <h4>Format</h4>
+                        <p>Live Online Session</p>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="masterclass-flyer-3.jpg" alt="Masterclass: How to Land Your First Remote Tech Role" loading="eager">
-                </div>
+                <a href="https://luma.com/am7w3q2a" target="_blank" class="register-btn">Reserve Your Spot - FREE</a>
             </div>
         </div>
     </section>
