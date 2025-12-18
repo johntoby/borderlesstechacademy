@@ -1,4 +1,4 @@
-# Borderless Tech Academy Website
+# Welcome to Borderless Tech Academy Website
 
 A modern, responsive website for Borderless Tech Academy - an online learning platform that enables students to learn, build, and earn from anywhere in the world.
 
