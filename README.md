@@ -1,6 +1,6 @@
-# Borderless Tech Academy Website
+# Welcome to Borderless Tech Academy Website
 
-A modern, responsive website for Borderless Tech Academy - an online learning platform that enables students to learn, build, and earn from anywhere in the world.
+A modern, responsive website for Borderless Tech Academy - an online learning platform that enables students to learn, build, and earn from anywhere in the world. We focus on basically 4 tech skill areas - DevOps, Software, Cybersecurity and AI engineering!
 
 ## Features
 
@@ -13,6 +13,12 @@ A modern, responsive website for Borderless Tech Academy - an online learning pl
 - **Testimonials**: Student success stories and feedback
 - **Form Integration**: Formspree-powered enrollment forms
 - **Analytics**: Google Analytics tracking for visitor insights
+- **Streamlined Enrollment**: Direct registration flow with integrated payment details
+- **Free Resources**: Downloadable curriculum guides for each program
+- **ROI Calculator**: Investment return calculator for prospective students
+- **Comparison Tables**: Feature comparison with other bootcamps
+- **Social Proof**: Recent enrollment notifications and seat counters
+- **Mobile Optimization**: Mobile-first design with sticky CTAs
 
 ## Tech Stack
 
@@ -22,6 +28,7 @@ A modern, responsive website for Borderless Tech Academy - an online learning pl
 - Responsive Design Principles
 - Formspree (Form handling)
 - Google Analytics (Tracking ID: G-RQ1M56GVE9)
+- Facebook Pixel Integration
 
 ## Getting Started
 
@@ -45,9 +52,47 @@ The website is live at: https://johntoby.github.io/borderlesstechacademy/
 
 ```
 borderless_tech_academy_website/
-├── index.html         # Main HTML file
+├── index.html         # Main HTML file with all pages
 └── README.md          # Project documentation
 ```
+
+## Key Pages & Features
+
+### Homepage
+- Hero section with value proposition
+- Programs overview with "Register Now" CTAs
+- Success metrics and impact statistics
+- ROI calculator
+- Feature comparison table
+- Social proof elements
+
+### Programs Page
+- Detailed curriculum for each program
+- Career outcomes and learning paths
+- Direct enrollment CTAs
+
+### Free Resources Page
+- Downloadable curriculum guides
+- Lead capture forms
+- Comprehensive FAQ section
+
+### Pricing Page
+- Flexible payment options (Nigerian/Diaspora)
+- Early bird discounts
+- Money-back guarantee
+
+### Enrollment Page
+- Streamlined 4-field application form
+- Integrated payment details
+- Clear enrollment process (6 steps)
+- Account information for direct payments
+
+## Payment Integration
+
+**Account Details:**
+- Account Name: Oluwatobiloba John Idowu
+- Account Number: 7191259344
+- Bank: Branch International Finance Company Limited
 
 ## About Borderless Tech Academy
 
