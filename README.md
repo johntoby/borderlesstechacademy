@@ -9,7 +9,7 @@ A modern, responsive website for Borderless Tech Academy - an online learning pl
 - **Single Page Application**: Dynamic content switching without page reloads
 - **Interactive Navigation**: Sticky navigation with smooth scrolling
 - **Program Showcase**: Detailed information about available courses
-- **Pricing Plans**: Clear pricing structure with featured options
+- **Pricing Plans**: Clear pricing structure with flexible payment options
 - **Testimonials**: Student success stories and feedback
 - **Form Integration**: Formspree-powered enrollment forms
 - **Analytics**: Google Analytics tracking for visitor insights
@@ -19,6 +19,7 @@ A modern, responsive website for Borderless Tech Academy - an online learning pl
 - **Comparison Tables**: Feature comparison with other bootcamps
 - **Social Proof**: Recent enrollment notifications and seat counters
 - **Mobile Optimization**: Mobile-first design with sticky CTAs
+- **Masterclass Landing Page**: Dedicated page for free masterclass events with futuristic tech design
 
 ## Tech Stack
 
@@ -52,8 +53,17 @@ The website is live at: https://johntoby.github.io/borderlesstechacademy/
 
 ```
 borderless_tech_academy_website/
-├── index.html         # Main HTML file with all pages
-└── README.md          # Project documentation
+├── index.html           # Main website with all pages
+├── masterclass.html     # Masterclass landing page
+├── images/              # All image assets
+│   ├── LOGO.png
+│   ├── devops-pics.png
+│   ├── master-software-eng.png
+│   ├── cyber-image.png
+│   ├── master-cloud.png
+│   ├── masterclass-flyer3.jpg
+│   └── ... (other images)
+└── README.md            # Project documentation
 ```
 
 ## Key Pages & Features
@@ -78,14 +88,23 @@ borderless_tech_academy_website/
 
 ### Pricing Page
 - Flexible payment options (Nigerian/Diaspora)
-- Early bird discounts
+- Monthly installment plans available
 - Money-back guarantee
+- Standard pricing: ₦450K (Nigeria) / $500 (Diaspora)
 
 ### Enrollment Page
 - Streamlined 4-field application form
 - Integrated payment details
 - Clear enrollment process (6 steps)
 - Account information for direct payments
+
+### Masterclass Page
+- Free masterclass registration
+- Event details and schedule
+- Futuristic tech-themed design
+- Integration with Luma event platform
+- What you'll learn section
+- Direct registration CTA
 
 ## Payment Integration
 
