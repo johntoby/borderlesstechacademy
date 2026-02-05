@@ -1,6 +1,6 @@
 # Welcome to Borderless Tech Academy Website
 
-A modern, responsive website for Borderless Tech Academy - an online learning platform that enables students to learn, build, and earn from anywhere in the world. We focus on basically 4 tech skill areas - DevOps, Software, Cybersecurity and AI engineering!
+A modern, responsive website for Borderless Tech Academy - an online learning platform that enables students to learn, build, and earn from anywhere in the world. We focus on basically 4 tech skill areas - DevOps engineering, Software, engineering Cybersecurity and AI engineering!
 
 ## Features
 
