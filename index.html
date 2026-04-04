@@ -1706,13 +1706,6 @@
             <div class="hero-content">
                 <h2>Ready to Transform Your Career?</h2>
                 <p>Join hundreds of Africans earning in dollars from anywhere in the world.</p>
-                <!-- Seats Remaining -->
-                <div class="seats-remaining">
-                    <i class="fas fa-users"></i> Only <span class="number" id="seats-remaining">27</span> of 50 Founding
-                    Member Seats Remaining!
-                    <div style="margin-top: 1rem; font-size: 0.9rem;">🔥 <span id="recent-enrollments">3</span> people
-                        enrolled in the last 24 hours</div>
-                </div>
                 <div class="guarantee-badge">
                     <i class="fas fa-calendar-alt"></i> Cohort starts April 11, 2026 | Seats filling up fast!
                 </div>
@@ -2442,16 +2435,7 @@
 
 
 
-        // Seat Counter (decreases randomly)
-        let seatsLeft = 27;
-        function updateSeats() {
-            if (seatsLeft > 15 && Math.random() < 0.3) {
-                seatsLeft--;
-                document.getElementById('seats-remaining').textContent = seatsLeft;
-                document.getElementById('urgency-seats').textContent = seatsLeft;
-            }
-        }
-        setInterval(updateSeats, 120000); // Check every 2 minutes
+
 
         // Recent Signup Notifications
         const signups = [
