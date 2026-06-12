@@ -766,6 +766,45 @@ button { font-family: inherit; }
 .section--dark .feature p { color: rgba(245, 247, 251, 0.68); }
 
 /* =================================================================
+   Partner logos
+   ================================================================= */
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+}
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 96px;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+.partner:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-soft);
+}
+.partner img {
+  max-width: 100%;
+  max-height: 48px;
+  object-fit: contain;
+}
+.partner .fa-aws {
+  font-size: 2.75rem;
+  color: #FF9900;
+}
+@media (max-width: 640px) {
+  .partner { width: 140px; height: 84px; }
+}
+
+/* =================================================================
    Stamp badge (visa-stamp motif — used sparingly)
    ================================================================= */
 

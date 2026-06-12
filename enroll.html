@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Apply for a seat at Borderless Tech Academy. Send your payment, complete the application, and our team will confirm your spot within 24 hours.">
+        content="Apply for a seat at Borderless Tech Academy. Fill out a short form and an enrollment advisor will reach out within 24 hours to help with payment and next steps.">
     <meta name="keywords"
         content="tech bootcamp Africa, learn coding Nigeria, DevOps training, software engineering course, cybersecurity certification, data science bootcamp, remote tech jobs, earn in dollars">
     <title>Enroll — Borderless Tech Academy</title>
@@ -76,43 +76,19 @@
         <div class="container page-header__inner">
             <p class="eyebrow">Enroll</p>
             <h1>Apply for your seat.</h1>
-            <p class="lead">Send your payment, complete the form below, and you're in. Our team reviews every application within 24 hours.</p>
+            <p class="lead">Fill out the short form below and an enrollment advisor will reach out &mdash; usually within 24 hours &mdash; to confirm your program and walk you through payment.</p>
         </div>
     </header>
 
-    <!-- Payment + application -->
+    <!-- Application + payment details -->
     <section class="section section--paper">
         <div class="container">
             <div class="grid grid--2">
                 <div>
-                    <p class="eyebrow">Step 1 &middot; Pay</p>
-                    <h2>Send your payment first.</h2>
-                    <p class="lead">Transfer the amount for your plan to the account below, then use the form to tell us it's you.</p>
-                    <div class="info-panel">
-                        <div class="info-panel__row">
-                            <span class="k">Amount</span>
-                            <span class="v">&#8358;450,000 (Nigeria) &middot; $500 (Diaspora)</span>
-                        </div>
-                        <div class="info-panel__row">
-                            <span class="k">Account name</span>
-                            <span class="v">Oluwatobiloba John Idowu <button type="button" class="copy-btn" data-copy="Oluwatobiloba John Idowu">Copy</button></span>
-                        </div>
-                        <div class="info-panel__row">
-                            <span class="k">Account number</span>
-                            <span class="v">7191259344 <button type="button" class="copy-btn" data-copy="7191259344">Copy</button></span>
-                        </div>
-                        <div class="info-panel__row">
-                            <span class="k">Bank</span>
-                            <span class="v">Branch International Finance Company Limited <button type="button" class="copy-btn" data-copy="Branch International Finance Company Limited">Copy</button></span>
-                        </div>
-                    </div>
-                    <p class="form-note mt-lg">On the monthly plan? Send the first month's payment of &#8358;150,000 to get started. Use your full name as the payment reference either way.</p>
-                </div>
-                <div>
-                    <p class="eyebrow">Step 2 &middot; Apply</p>
+                    <p class="eyebrow">Apply</p>
                     <h2>Tell us about you.</h2>
-                    <p class="lead">A few details so we can confirm your spot and add you to the right cohort group.</p>
-                    <form data-formspree data-success="Application received — we'll review it within 24 hours." action="https://formspree.io/f/movygqnj" method="POST">
+                    <p class="lead">A few details so an advisor can confirm your spot, answer your questions, and get you into the right cohort group.</p>
+                    <form data-formspree data-success="Application received — an advisor will reach out within 24 hours." action="https://formspree.io/f/movygqnj" method="POST">
                         <input type="hidden" name="form_type" value="enrollment">
                         <div class="field">
                             <label for="enroll-name">Full name</label>
@@ -121,6 +97,10 @@
                         <div class="field">
                             <label for="enroll-email">Email address</label>
                             <input type="email" id="enroll-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="enroll-phone">Phone / WhatsApp number</label>
+                            <input type="tel" id="enroll-phone" name="phone" autocomplete="tel" placeholder="+234 800 000 0000" required>
                         </div>
                         <div class="field">
                             <label for="enroll-program">Program</label>
@@ -150,6 +130,30 @@
                         <p class="form-status" role="status"></p>
                     </form>
                 </div>
+                <div>
+                    <p class="eyebrow">Pricing &amp; payment</p>
+                    <h2>Ready to pay already?</h2>
+                    <p class="lead">No need to wait for a call &mdash; here's everything you need to send your payment now. Your advisor will confirm it against your application.</p>
+                    <div class="info-panel">
+                        <div class="info-panel__row">
+                            <span class="k">Amount</span>
+                            <span class="v">&#8358;450,000 (Nigeria) &middot; $500 (Diaspora)</span>
+                        </div>
+                        <div class="info-panel__row">
+                            <span class="k">Account name</span>
+                            <span class="v">Oluwatobiloba John Idowu <button type="button" class="copy-btn" data-copy="Oluwatobiloba John Idowu">Copy</button></span>
+                        </div>
+                        <div class="info-panel__row">
+                            <span class="k">Account number</span>
+                            <span class="v">7191259344 <button type="button" class="copy-btn" data-copy="7191259344">Copy</button></span>
+                        </div>
+                        <div class="info-panel__row">
+                            <span class="k">Bank</span>
+                            <span class="v">Branch International Finance Company Limited <button type="button" class="copy-btn" data-copy="Branch International Finance Company Limited">Copy</button></span>
+                        </div>
+                    </div>
+                    <p class="form-note mt-lg">On the monthly plan? Send the first month's payment of &#8358;150,000 to get started. Use your full name as the payment reference either way.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -163,34 +167,34 @@
             </div>
             <div class="itinerary reveal">
                 <div class="leg">
-                    <p class="leg__num">Step 1 &middot; Pay</p>
-                    <h3>Send your payment</h3>
-                    <p>Transfer the amount for your plan to the account details above.</p>
+                    <p class="leg__num">Step 1 &middot; Apply</p>
+                    <h3>Submit the form</h3>
+                    <p>Tell us who you are, what you want to study, and where you're based.</p>
                 </div>
                 <div class="leg">
-                    <p class="leg__num">Step 2 &middot; Apply</p>
-                    <h3>Submit the form</h3>
+                    <p class="leg__num">Step 2 &middot; Connect</p>
+                    <h3>Hear from an advisor</h3>
+                    <p>We'll reach out by phone, WhatsApp, or email to confirm your program and answer any questions.</p>
+                </div>
+                <div class="leg">
+                    <p class="leg__num">Step 3 &middot; Pay</p>
+                    <h3>Send your payment</h3>
+                    <p>Transfer the amount for your plan using the account details on this page.</p>
+                </div>
+                <div class="leg">
+                    <p class="leg__num">Step 4 &middot; Confirm</p>
+                    <h3>We confirm your spot</h3>
                     <p>Use your full name as the payment reference so we can match it to your application.</p>
                 </div>
                 <div class="leg">
-                    <p class="leg__num">Step 3 &middot; Review</p>
-                    <h3>We check your application</h3>
-                    <p>Our team reviews every application and confirms payment within 24 hours.</p>
-                </div>
-                <div class="leg">
-                    <p class="leg__num">Step 4 &middot; Group</p>
+                    <p class="leg__num">Step 5 &middot; Group</p>
                     <h3>Join your cohort group</h3>
                     <p>Once confirmed, you're added to the WhatsApp group for paid learners.</p>
                 </div>
                 <div class="leg">
-                    <p class="leg__num">Step 5 &middot; Start</p>
+                    <p class="leg__num">Step 6 &middot; Start</p>
                     <h3>Get your class schedule</h3>
-                    <p>We'll confirm your cohort's start date and send your live-class timetable.</p>
-                </div>
-                <div class="leg">
-                    <p class="leg__num">Step 6 &middot; Show up</p>
-                    <h3>Attend, build, repeat</h3>
-                    <p>Consistent attendance is what makes the six months work &mdash; see you in class.</p>
+                    <p>We confirm your cohort's start date and send your live-class timetable.</p>
                 </div>
             </div>
         </div>
