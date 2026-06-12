@@ -1,620 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FREE Masterclass: How to Land Your First Remote Tech Role and Start Earning in Dollars. December 20th, 2025 at 10am WAT. Register now!">
-    <title>FREE Tech Masterclass: Land Your First Remote Tech Role | Borderless Tech Academy</title>
-    
-    <!-- Google Analytics -->
+    <meta name="description"
+        content="Join our free live masterclass on how to land your first remote tech role and start earning in dollars from anywhere. Reserve your seat — it's free.">
+    <meta name="keywords"
+        content="remote tech jobs, free masterclass, work from home Africa, earn in dollars, tech career Africa, Borderless Tech Academy">
+    <title>Free Masterclass: Land Your First Remote Tech Role — Borderless Tech Academy</title>
+
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQ1M56GVE9"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-RQ1M56GVE9');
     </script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID'); // Replace with actual Facebook Pixel ID
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" /></noscript>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #1a1a2e;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 50%, #2d1b69 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
-                linear-gradient(45deg, transparent 30%, rgba(0, 255, 255, 0.05) 50%, transparent 70%);
-            animation: techPulse 4s ease-in-out infinite;
-        }
-
-        @keyframes techPulse {
-            0%, 100% { opacity: 0.5; }
-            50% { opacity: 1; }
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 30%, #2d1b69 70%, #4c1d95 100%);
-            color: white;
-            padding: 4rem 0 6rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 50% 50%, rgba(0, 255, 127, 0.1) 0%, transparent 60%),
-                linear-gradient(45deg, transparent 20%, rgba(0, 255, 255, 0.05) 40%, transparent 60%, rgba(255, 0, 255, 0.05) 80%, transparent 100%);
-            animation: futuristicFlow 8s ease-in-out infinite;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                repeating-linear-gradient(
-                    90deg,
-                    transparent,
-                    transparent 98px,
-                    rgba(0, 255, 255, 0.03) 100px
-                ),
-                repeating-linear-gradient(
-                    0deg,
-                    transparent,
-                    transparent 98px,
-                    rgba(255, 0, 255, 0.03) 100px
-                );
-            animation: gridMove 20s linear infinite;
-        }
-
-        @keyframes futuristicFlow {
-            0%, 100% {
-                background: 
-                    radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.15) 0%, transparent 40%),
-                    radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.15) 0%, transparent 40%),
-                    radial-gradient(circle at 50% 50%, rgba(0, 255, 127, 0.1) 0%, transparent 60%);
-            }
-            50% {
-                background: 
-                    radial-gradient(circle at 90% 20%, rgba(0, 255, 255, 0.2) 0%, transparent 40%),
-                    radial-gradient(circle at 10% 80%, rgba(255, 0, 255, 0.2) 0%, transparent 40%),
-                    radial-gradient(circle at 50% 50%, rgba(0, 255, 127, 0.15) 0%, transparent 60%);
-            }
-        }
-
-        @keyframes gridMove {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(100px, 100px); }
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
-
-        /* Image Section */
-        .image-section {
-            background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 30%, #2d1b69 70%, #4c1d95 100%);
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .image-container img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Title Section */
-        .title-section {
-            background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 30%, #2d1b69 70%, #4c1d95 100%);
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .title-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.15) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(255, 0, 255, 0.15) 0%, transparent 40%);
-            animation: futuristicFlow 8s ease-in-out infinite;
-        }
-
-        .title-section h1 {
-            position: relative;
-            z-index: 2;
-        }
-
-        .title-section .subtitle {
-            position: relative;
-            z-index: 2;
-        }
-
-        .title-section .event-details {
-            position: relative;
-            z-index: 2;
-        }
-
-        .free-badge {
-            background: #ffd700;
-            color: #1a1a2e;
-            padding: 0.5rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            display: inline-block;
-            margin-bottom: 2rem;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-
-        .hero .subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .event-details {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 2rem;
-            margin: 3rem auto;
-            max-width: 600px;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .event-details h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #ffd700;
-        }
-
-        .event-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .info-item {
-            text-align: center;
-        }
-
-        .info-item i {
-            font-size: 2rem;
-            color: #ffd700;
-            margin-bottom: 0.5rem;
-        }
-
-        .info-item h4 {
-            font-size: 1.1rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .info-item p {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        .register-btn {
-            background: #ffd700;
-            color: #1a1a2e;
-            padding: 1.2rem 3rem;
-            font-size: 1.2rem;
-            font-weight: 700;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .register-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.4);
-        }
-
-        /* What You'll Learn */
-        .learn-section {
-            padding: 6rem 0;
-            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .learn-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 25% 25%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(255, 0, 255, 0.1) 0%, transparent 50%);
-            animation: techPulse 6s ease-in-out infinite;
-        }
-
-        .learn-section h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: white;
-            position: relative;
-            z-index: 2;
-        }
-
-        .learn-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .learn-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(0, 255, 255, 0.2);
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .learn-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .learn-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(0, 255, 255, 0.5);
-            box-shadow: 0 15px 40px rgba(0, 255, 255, 0.2);
-        }
-
-        .learn-card:hover::before {
-            left: 100%;
-        }
-
-        .learn-card i {
-            font-size: 2.5rem;
-            color: #00ffff;
-            margin-bottom: 1rem;
-            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-        }
-
-        .learn-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: white;
-        }
-
-        .learn-card p {
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        /* Registration Form */
-        .registration {
-            padding: 6rem 0;
-            background: linear-gradient(135deg, #0a0a23 0%, #1a1a3e 50%, #2d1b69 100%);
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .registration::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 30% 70%, rgba(255, 0, 255, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 70% 30%, rgba(0, 255, 255, 0.15) 0%, transparent 50%);
-            animation: techPulse 5s ease-in-out infinite;
-        }
-
-        .registration h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .form-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            padding: 3rem;
-            border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 1rem;
-            border: none;
-            border-radius: 10px;
-            font-size: 1rem;
-            background: rgba(255,255,255,0.9);
-            color: #1a1a2e;
-        }
-
-        .submit-btn {
-            width: 100%;
-            background: #ffd700;
-            color: #1a1a2e;
-            padding: 1.2rem;
-            font-size: 1.2rem;
-            font-weight: 700;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
-        }
-
-        /* Footer */
-        footer {
-            background: #1a1a2e;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .title-section h1 {
-                font-size: 2.5rem;
-            }
-            
-            .title-section .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .event-info {
-                grid-template-columns: 1fr;
-            }
-            
-            .container {
-                padding: 0 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">Borderless Tech Academy</div>
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Primary">
+        <div class="nav__inner">
+            <a class="nav__brand" href="index.html">
+                <img src="images/LOGO ICON (black).png" alt="" width="36" height="36">
+                Borderless Tech Academy
+            </a>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="enroll.html" class="btn btn--primary btn--sm">Enroll now</a></li>
+            </ul>
+            <div class="nav__actions">
+                <a class="btn btn--primary btn--sm" href="enroll.html">Enroll now</a>
+            </div>
+            <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container hero__inner">
+            <div>
+                <p class="hero__kicker">Free masterclass &middot; live online</p>
+                <h1>How to land your first <span class="accent">remote tech role.</span></h1>
+                <p class="hero__lead">One live session on finding remote tech work, building a resume that travels, and getting paid in dollars &mdash; wherever you're based.</p>
+                <div class="btn-row">
+                    <a class="btn btn--primary" href="https://luma.com/am7w3q2a" target="_blank" rel="noopener" data-masterclass-cta>Reserve your free seat</a>
+                    <a class="btn btn--secondary" href="#agenda">See what's covered</a>
+                </div>
+            </div>
+            <div class="ticket">
+                <div class="ticket__body">
+                    <p class="ticket__route">BTA &middot; Free masterclass</p>
+                    <h2 class="ticket__title">Land your first remote role</h2>
+                    <div class="ticket__fields">
+                        <div class="ticket__field"><span class="k">Format</span><span class="v">Live, online</span></div>
+                        <div class="ticket__field"><span class="k">Cost</span><span class="v">Free</span></div>
+                        <div class="ticket__field"><span class="k">Hosted by</span><span class="v">BTA instructors &amp; alumni</span></div>
+                        <div class="ticket__field"><span class="k">Seats</span><span class="v">Limited &mdash; reserve ahead</span></div>
+                    </div>
+                    <div class="ticket__actions">
+                        <a class="btn btn--primary btn--block" href="https://luma.com/am7w3q2a" target="_blank" rel="noopener" data-masterclass-cta>Reserve your seat</a>
+                    </div>
+                </div>
+                <div class="ticket__stub">
+                    <i class="fas fa-graduation-cap ticket__stub-icon" aria-hidden="true"></i>
+                    <span class="ticket__stub-code">FREE</span>
+                    <span class="ticket__stub-label">Masterclass</span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Agenda -->
+    <section class="section section--paper" id="agenda">
         <div class="container">
-            <div class="hero-content">
-                <div class="free-badge">FREE MASTERCLASS</div>
+            <div class="section__head section__head--center">
+                <p class="eyebrow">On the agenda</p>
+                <h2>What you'll walk away with</h2>
+                <p class="lead">An hour of practical, specific guidance &mdash; no pitch, just the steps that move you from learner to hired.</p>
+            </div>
+            <div class="grid grid--3 reveal">
+                <div class="feature">
+                    <div class="feature__icon"><i class="fas fa-search" aria-hidden="true"></i></div>
+                    <h3>Find roles that pay in dollars</h3>
+                    <p>The platforms and search strategies that actually surface remote tech roles.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
+                    <h3>Build a resume that travels</h3>
+                    <p>What to put on a resume so international recruiters take it seriously.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
+                    <h3>Get ready for technical interviews</h3>
+                    <p>What global employers actually ask, and how to walk through your answers.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon"><i class="fas fa-dollar-sign" aria-hidden="true"></i></div>
+                    <h3>Negotiate a global salary</h3>
+                    <p>How to talk about rate and pay once you're earning in dollars.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon"><i class="fas fa-globe" aria-hidden="true"></i></div>
+                    <h3>Work remotely without the chaos</h3>
+                    <p>The habits that make a distributed team trust you with more.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon"><i class="fas fa-rocket" aria-hidden="true"></i></div>
+                    <h3>Go from learner to hired</h3>
+                    <p>How BTA graduates turn a training program into a paying role.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="image-section">
-        <div class="container">
-            <div class="image-container">
-                <img src="images/masterclass-flyer3.jpg" alt="Masterclass: How to Land Your First Remote Tech Role" loading="eager">
+    <!-- Final CTA -->
+    <section class="section section--dark">
+        <div class="container text-center">
+            <p class="eyebrow" style="justify-content:center;">It's free &mdash; and live</p>
+            <h2>Reserve your seat</h2>
+            <p class="lead" style="margin-inline:auto; max-width:50ch;">Open to anyone serious about going remote, whether or not you've ever written a line of code.</p>
+            <div class="btn-row" style="justify-content:center; margin-top: var(--space-md);">
+                <a class="btn btn--primary" href="https://luma.com/am7w3q2a" target="_blank" rel="noopener" data-masterclass-cta>Reserve your free seat</a>
+                <a class="btn btn--ghost" href="https://wa.me/2348103734621" target="_blank" rel="noopener">Ask a question on WhatsApp</a>
             </div>
         </div>
     </section>
 
-    <section class="title-section">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <h1>How to Land Your First Remote Tech Role</h1>
-            <p class="subtitle">Start Earning in Dollars from Anywhere in the World</p>
-            
-            <div class="event-details">
-                <h3>Event Details</h3>
-                <div class="event-info">
-                    <div class="info-item">
-                        <i class="fas fa-calendar"></i>
-                        <h4>Date</h4>
-                        <p>Saturday, December 20th, 2025</p>
+            <div class="footer__grid">
+                <div>
+                    <a class="footer__brand" href="index.html">
+                        <img src="images/LOGO ICON (white).png" alt="" width="34" height="34">
+                        Borderless Tech Academy
+                    </a>
+                    <p>Making Africans globally employable through practical, borderless tech education.</p>
+                    <h4 style="margin-top: var(--space-md);">Course updates</h4>
+                    <form class="newsletter-form" data-formspree data-success="Subscribed — watch your inbox." action="https://formspree.io/f/movygqnj" method="POST">
+                        <input type="hidden" name="form_type" value="newsletter">
+                        <div class="field" style="flex-direction:row; gap:0.5rem;">
+                            <label class="visually-hidden" for="newsletter-email">Email address</label>
+                            <input type="email" id="newsletter-email" name="email" placeholder="Your email" required style="flex:1;">
+                            <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
+                        </div>
+                        <p class="form-status" role="status"></p>
+                    </form>
+                    <p class="form-note" style="margin-top: var(--space-sm);">Remote-first &middot; Nigeria HQ</p>
+                </div>
+                <div>
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#cloud-devops">Cloud &amp; DevOps Engineering</a></li>
+                        <li><a href="programs.html#software-engineering">Software Engineering</a></li>
+                        <li><a href="programs.html#cybersecurity">Cybersecurity</a></li>
+                        <li><a href="programs.html#data-ai">Data Science &amp; AI</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Quick links</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="resources.html">Free resources</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="enroll.html">Enroll now</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:info@borderlesstechacademy.com">info@borderlesstechacademy.com</a></li>
+                        <li><a href="https://wa.me/2348103734621" target="_blank" rel="noopener">WhatsApp community</a></li>
+                    </ul>
+                    <div class="stamps">
+                        <a href="https://www.linkedin.com/company/borderlesstechacademy" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/borderlesstechacademy" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://x.com/bta_tech_99" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://facebook.com/borderlesstechacademe" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <h4>Time</h4>
-                        <p>10:00 AM WAT</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-laptop"></i>
-                        <h4>Format</h4>
-                        <p>Live Online Session</p>
-                    </div>
-                </div>
-                <a href="https://luma.com/am7w3q2a" target="_blank" class="register-btn">Reserve Your Spot - FREE</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="learn-section">
-        <div class="container">
-            <h2>What You'll Learn</h2>
-            <div class="learn-grid">
-                <div class="learn-card">
-                    <i class="fas fa-search"></i>
-                    <h3>How to Find Remote Tech Jobs</h3>
-                    <p>Discover the best platforms and strategies to find high-paying remote tech opportunities worldwide.</p>
-                </div>
-                <div class="learn-card">
-                    <i class="fas fa-file-alt"></i>
-                    <h3>Craft a Winning Resume</h3>
-                    <p>Learn how to create a tech resume that stands out and gets you interviews with international companies.</p>
-                </div>
-                <div class="learn-card">
-                    <i class="fas fa-comments"></i>
-                    <h3>Ace Technical Interviews</h3>
-                    <p>Master the art of technical interviews and learn what global employers are really looking for.</p>
-                </div>
-                <div class="learn-card">
-                    <i class="fas fa-dollar-sign"></i>
-                    <h3>Negotiate Your Salary</h3>
-                    <p>Understand how to negotiate competitive salaries and get paid in dollars for your tech skills.</p>
-                </div>
-                <div class="learn-card">
-                    <i class="fas fa-globe"></i>
-                    <h3>Work Remotely Like a Pro</h3>
-                    <p>Essential tips for thriving in a remote work environment and building a global career.</p>
-                </div>
-                <div class="learn-card">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Fast-Track Your Career</h3>
-                    <p>Proven strategies to accelerate your tech career and achieve financial freedom faster.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="registration" id="register">
-        <div class="container">
-            <h2>Register for FREE</h2>
-            <div class="form-container">
-                <p style="font-size: 1.2rem; margin-bottom: 2rem; text-align: center;">Click the button below to register on our secure Luma event page</p>
-                <a href="https://luma.com/am7w3q2a" target="_blank" class="submit-btn" style="display: block; text-align: center; text-decoration: none;">
-                    <i class="fas fa-rocket"></i> Register Now - It's FREE!
-                </a>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Borderless Tech Academy. Founded by African tech experts, for Africans.</p>
+                <p class="footer__tagline">"Your laptop is your visa. Learn. Build. Earn &mdash; from anywhere."</p>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Borderless Tech Academy. All rights reserved.</p>
-            <p>Questions? Contact us at <a href="mailto:info@borderlesstechacademy.com" style="color: #ffd700;">info@borderlesstechacademy.com</a></p>
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+    <!-- Mobile sticky CTA -->
+    <div class="sticky-cta">
+        <span>Free &middot; live &middot; open to all</span>
+        <a class="btn btn--primary btn--sm" href="https://luma.com/am7w3q2a" target="_blank" rel="noopener" data-masterclass-cta>Reserve seat</a>
+    </div>
 
-        // Registration link tracking
-        document.querySelectorAll('a[href="https://luma.com/am7w3q2a"]').forEach(link => {
-            link.addEventListener('click', function() {
-                gtag('event', 'masterclass_registration_click', {
-                    'event_category': 'engagement',
-                    'event_label': 'December 2025 Masterclass Luma'
-                });
+    <script src="js/main.js"></script>
+    <script>
+        document.querySelectorAll('[data-masterclass-cta]').forEach(function (link) {
+            link.addEventListener('click', function () {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'masterclass_registration_click', {
+                        event_category: 'engagement',
+                        event_label: 'Masterclass Luma registration'
+                    });
+                }
             });
         });
     </script>
 </body>
+
 </html>
