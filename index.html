@@ -71,36 +71,23 @@
         </div>
     </nav>
 
-    <!-- Mobile Sticky CTA -->
-    <div class="mobile-sticky-cta">
-        <button onclick="window.location.href = 'enroll.html'">
-            <i class="fas fa-rocket"></i> Enroll Now - Cohort 2 starts April 1st!
-        </button>
-    </div>
-
-    <!-- Mobile Contact Buttons -->
-    <div class="mobile-contact-btns">
-        <a href="https://wa.me/2348103734621" class="mobile-contact-btn whatsapp" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="tel:+2348103734621" class="mobile-contact-btn phone">
-            <i class="fas fa-phone"></i>
-        </a>
-    </div>
-
-
-
-    <!-- HOME PAGE -->
-    <div id="home" class="page active">
-        <!-- Cohort 2 Announcement Banner -->
-        <section class="hero" style="padding: 4rem 2rem;">
-            <div class="hero-content">
-                <span style="background: #ffd700; color: #1a1a2e; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; font-size: 1.1rem; display: inline-block; margin-bottom: 1.5rem; animation: pulse 2s infinite;">🚀 COHORT 2 IS HERE!</span>
-                <h1>Classes Start <span class="highlight">April 1st, 2025</span></h1>
-                <p>Don't miss your chance to join Africa's premier live tech academy. Limited seats available!</p>
-                <button class="hero-cta" onclick="showPage('enroll')">
-                    Enroll Now <i class="fas fa-arrow-right"></i>
-                </button>
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container hero__inner">
+            <div>
+                <p class="hero__kicker">Applications open &middot; all routes</p>
+                <h1>Your laptop is <span class="accent">your visa.</span></h1>
+                <p class="hero__lead">Train for six months, live online, in Cloud &amp; DevOps, Software Engineering, Cybersecurity, or Data &amp; AI. Then spend three months in a real internship and start earning in dollars &mdash; from anywhere.</p>
+                <div class="btn-row">
+                    <a class="btn btn--primary" href="enroll.html">Apply for a seat</a>
+                    <a class="btn btn--secondary" href="programs.html">See the routes</a>
+                </div>
+                <div class="hero__meta">
+                    <div class="hero__meta-item"><span class="num">4</span><span class="label">Tracks</span></div>
+                    <div class="hero__meta-item"><span class="num">6</span><span class="label">Months to job-ready</span></div>
+                    <div class="hero__meta-item"><span class="num">100%</span><span class="label">Live online</span></div>
+                    <div class="hero__meta-item"><span class="num">3 mo</span><span class="label">Internship included</span></div>
+                </div>
             </div>
             <div class="board" data-board aria-label="Sample cohort departures">
                 <div class="board__header">
@@ -145,7 +132,7 @@
                         <span class="board__cell board__cell--status"><span class="board__status board__status--final">Final call</span></span>
                     </li>
                 </ul>
-                <div class="board__foot">Next cohort boards soon &middot; 50 seats per cohort</div>
+                <div class="board__foot">Cohort 3 boards 27 July 2026 &middot; 50 seats per cohort</div>
             </div>
         </div>
     </header>
@@ -388,22 +375,19 @@
         </div>
     </section>
 
-
-
-        <!-- CTA Section -->
-        <section class="hero" style="padding: 4rem 2rem;">
-            <div class="hero-content">
-                <h2>Ready to Transform Your Career?</h2>
-                <p>Join hundreds of Africans earning in dollars from anywhere in the world.</p>
-                <!-- Seats Remaining -->
-                <div class="seats-remaining">
-                    <i class="fas fa-users"></i> Only <span class="number" id="seats-remaining">27</span> of 50 Founding
-                    Member Seats Remaining!
-                    <div style="margin-top: 1rem; font-size: 0.9rem;">🔥 <span id="recent-enrollments">3</span> people
-                        enrolled in the last 24 hours</div>
-                </div>
-                <div class="guarantee-badge">
-                    <i class="fas fa-calendar-alt"></i> Cohort 2 starts April 1st, 2025 | Seats filling up fast!
+    <!-- Why choose BTA -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section__head section__head--center">
+                <p class="eyebrow">Why choose BTA</p>
+                <h2>We don't just teach technology &mdash; we teach freedom</h2>
+                <p class="lead">Freedom from limits, borders, and geography.</p>
+            </div>
+            <div class="grid grid--3 reveal">
+                <div class="feature">
+                    <div class="feature__icon"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i></div>
+                    <h3>Live training</h3>
+                    <p>100% live, instructor-led classes with real-time feedback and mentorship &mdash; not pre-recorded videos.</p>
                 </div>
                 <div class="feature">
                     <div class="feature__icon"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
@@ -541,339 +525,13 @@
         </div>
     </footer>
 
-    <!-- ENROLL PAGE -->
-    <div id="enroll" class="page">
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Start Your Journey Today</h1>
-                <p>Join Cohort 2 starting April 1st, 2025 - Limited seats available!</p>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="contact-form">
-                <h2 style="text-align: center; margin-bottom: 2rem;">Enrollment Application</h2>
-
-                <!-- Simplified Formspree Form - 4 Fields Only -->
-                <form id="enrollmentForm" action="https://formspree.io/f/movygqnj" method="POST">
-                    <div class="form-group">
-                        <label><i class="fas fa-user"></i> Full Name *</label>
-                        <input type="text" name="name" required placeholder="Enter your full name">
-                    </div>
-
-                    <div class="form-group">
-                        <label><i class="fas fa-envelope"></i> Email Address *</label>
-                        <input type="email" name="email" required placeholder="your.email@example.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label><i class="fas fa-laptop-code"></i> Select Program *</label>
-                        <select name="program" required>
-                            <option value="">Choose your program</option>
-                            <option value="Cloud & DevOps Engineering">Cloud & DevOps Engineering</option>
-                            <option value="Software Engineering">Software Engineering</option>
-                            <option value="Cybersecurity">Cybersecurity</option>
-                            <option value="Data Science & AI">Data Science & AI</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label><i class="fas fa-map-marker-alt"></i> Location *</label>
-                        <select name="location" required>
-                            <option value="">Select your location</option>
-                            <option value="Nigeria">Nigeria</option>
-                            <option value="Ghana">Ghana</option>
-                            <option value="Kenya">Kenya</option>
-                            <option value="South Africa">South Africa</option>
-                            <option value="Diaspora - USA">Diaspora - USA</option>
-                            <option value="Diaspora - UK">Diaspora - UK</option>
-                            <option value="Diaspora - Canada">Diaspora - Canada</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-
-                    <div
-                        style="margin: 2rem 0; padding: 1.5rem; background: #f0f4ff; border-radius: 10px; border-left: 4px solid #667eea;">
-                        <h4
-                            style="color: #667eea; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-university"></i> Payment Details
-                        </h4>
-                        <p style="margin-bottom: 0.5rem; color: #1a1a2e;"><strong>Amount:</strong> Nigerian - ₦450,000 |
-                            Diaspora - $500</p>
-                        <p style="margin-bottom: 0.5rem; color: #1a1a2e;"><strong>Account Name:</strong> Oluwatobiloba
-                            John Idowu</p>
-                        <p style="margin-bottom: 0.5rem; color: #1a1a2e;"><strong>Account Number:</strong> 7191259344
-                        </p>
-                        <p style="margin-bottom: 1rem; color: #1a1a2e;"><strong>Bank:</strong> Branch International
-                            Finance Company Limited</p>
-                        <p style="font-size: 0.9rem; color: #64748b; font-style: italic;">Please make your payment
-                            before submitting this form. Include your full name as payment reference.</p>
-                    </div>
-
-                    <button type="submit" class="submit-btn">
-                        <i class="fas fa-paper-plane"></i> Get Started
-                    </button>
-                </form>
-
-                <div
-                    style="margin-top: 3rem; padding: 2rem; background: #f8fafc; border-radius: 15px; text-align: center;">
-                    <h3 style="margin-bottom: 1.5rem; color: #1a1a2e;">What Happens Next?</h3>
-                    <div
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; text-align: center;">
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">1️⃣</div>
-                            <p>Make payment for your desired course</p>
-                        </div>
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">2️⃣</div>
-                            <p>Complete the enrollment form</p>
-                        </div>
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">3️⃣</div>
-                            <p>Review within 24 hours</p>
-                        </div>
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">4️⃣</div>
-                            <p>After confirmation, you will added to the whatsapp group for paid learners</p>
-                        </div>
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">5️⃣</div>
-                            <p>Congratulations, you are on your way to becoming a Tech Pro!</p>
-                        </div>
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">6️⃣</div>
-                            <p>Don't miss classes!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Mobile sticky CTA -->
+    <div class="sticky-cta">
+        <span>50 seats per cohort &middot; apply today</span>
+        <a class="btn btn--primary btn--sm" href="enroll.html">Apply now</a>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Borderless Tech Academy</h3>
-                <p>Making Africans globally employable through practical, borderless tech education.</p>
-                <div class="newsletter-section" style="margin-top: 1.5rem;">
-                    <h3 style="font-size: 1.2rem;">📧 Get Course Updates</h3>
-                    <form class="newsletter-form" action="https://formspree.io/f/movygqnj" method="POST">
-                        <input type="hidden" name="form_type" value="newsletter">
-                        <input type="email" name="email" placeholder="Your email" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-                <p style="margin-top: 1rem;"><i class="fas fa-map-marker-alt"></i> Remote-first | Nigeria HQ</p>
-                <p><i class="fas fa-calendar-alt"></i> Cohort 2: April 1st, 2025</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Programs</h3>
-                <a href="programs.html">Cloud & DevOps Engineering</a>
-                <a href="programs.html">Software Engineering</a>
-                <a href="programs.html">Cybersecurity</a>
-                <a href="programs.html">Data Science & AI</a>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <a href="about.html">About Us</a>
-                <a href="resources.html">Free Resources</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="enroll.html">Enroll Now</a>
-            </div>
-
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <a href="mailto:info@borderlesstechacademy.com"><i class="fas fa-envelope"></i>
-                    info@borderlesstechacademy.com</a>
-                <a href="https://wa.me/2348103734621" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp
-                    Community</a>
-                <a href="https://www.linkedin.com/company/borderlesstechacademy" target="_blank"><i
-                        class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://www.instagram.com/borderlesstechacademy" target="_blank"><i
-                        class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://x.com/bta_tech_99" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                <a href="https://facebook.com/borderlesstechacademe" target="_blank"><i class="fab fa-facebook"></i>
-                    Facebook</a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 Borderless Tech Academy. Founded by African tech experts, for Africans. All rights reserved.
-            </p>
-            <p style="margin-top: 0.5rem; font-style: italic;">"Your laptop is your visa. Learn. Build. Earn - From
-                Anywhere."</p>
-        </div>
-    </footer>
-
-    <script>
-        function showPage(pageId) {
-            // Hide all pages
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => page.classList.remove('active'));
-
-            // Show selected page
-            const targetPage = document.getElementById(pageId);
-            if (targetPage) {
-                targetPage.classList.add('active');
-            }
-
-            // Scroll to top
-            window.scrollTo(0, 0);
-        }
-
-        // Form submission handling
-        document.getElementById('enrollmentForm').addEventListener('submit', function (e) {
-            // Show loading state
-            const submitBtn = document.querySelector('.submit-btn');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
-            submitBtn.disabled = true;
-
-            // The form will be submitted to Formspree automatically
-            // Add a small delay to show the loading state
-            setTimeout(() => {
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            }, 1000);
-        });
-
-        // Smooth animations on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeInUp 0.6s ease-out';
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements for animation
-        document.querySelectorAll('.program-card, .stat-card, .price-card, .testimonial-card, .feature-card').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            const menuBtn = document.getElementById('mobileMenuBtn');
-            mobileMenu.classList.toggle('active');
-            const icon = menuBtn.querySelector('i');
-            icon.className = mobileMenu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
-        }
-
-        document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
-
-
-
-        // Seat Counter (decreases randomly)
-        let seatsLeft = 27;
-        function updateSeats() {
-            if (seatsLeft > 15 && Math.random() < 0.3) {
-                seatsLeft--;
-                document.getElementById('seats-remaining').textContent = seatsLeft;
-                document.getElementById('urgency-seats').textContent = seatsLeft;
-            }
-        }
-        setInterval(updateSeats, 120000); // Check every 2 minutes
-
-        // Recent Signup Notifications
-        const signups = [
-            { name: 'Chioma from Lagos', program: 'DevOps' },
-            { name: 'Kwame from Accra', program: 'Software Engineering' },
-            { name: 'Amara from Nairobi', program: 'Cybersecurity' },
-            { name: 'Tunde from Abuja', program: 'DevOps' },
-            { name: 'Sarah from London', program: 'Data Science' },
-            { name: 'Emmanuel from Port Harcourt', program: 'Software Engineering' }
-        ];
-
-        function showRecentSignup() {
-            const signup = signups[Math.floor(Math.random() * signups.length)];
-            const notification = document.createElement('div');
-            notification.className = 'recent-signup show';
-            notification.innerHTML = `
-                <i class="fas fa-check-circle icon"></i>
-                <strong>${signup.name}</strong> just enrolled in ${signup.program}!
-            `;
-            document.body.appendChild(notification);
-
-            setTimeout(() => {
-                notification.classList.remove('show');
-                setTimeout(() => notification.remove(), 500);
-            }, 5000);
-        }
-
-        // Show notification every 15-30 seconds
-        setInterval(showRecentSignup, Math.random() * 15000 + 15000);
-        setTimeout(showRecentSignup, 5000); // First one after 5 seconds
-
-        // Curriculum download links
-        const curriculumLinks = {
-            'DevOps': 'https://drive.google.com/file/d/1wHcib4kFvQpDttnwX4tNat866FMhdT3C/view?usp=sharing',
-            'Software Engineering': 'https://drive.google.com/file/d/1-Fzy6_Ftzl1BaLpUDd0_FKEFw6QOAXhr/view?usp=sharing',
-            'Cybersecurity': 'https://drive.google.com/file/d/150nf_BLF9RISvNqUfecSOINcosaIpZV9/view?usp=sharing',
-            'Data Science': 'https://drive.google.com/file/d/1fdyObwpKa0t4EWlxUigjL1XUoJx432ic/view?usp=sharing'
-        };
-
-        // Download Form Functions
-        function showDownloadForm(curriculum) {
-            document.getElementById('downloadModal').style.display = 'flex';
-            document.getElementById('curriculumName').textContent = curriculum;
-            document.getElementById('curriculumType').value = curriculum;
-        }
-
-        function closeDownloadForm() {
-            document.getElementById('downloadModal').style.display = 'none';
-        }
-
-        // Download form submission
-        document.getElementById('downloadForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            const curriculum = document.getElementById('curriculumType').value;
-            const downloadLink = curriculumLinks[curriculum];
-
-            fetch(this.action, {
-                method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            }).then(response => {
-                if (response.ok) {
-                    if (downloadLink) {
-                        window.open(downloadLink, '_blank');
-                        alert('Thank you! The curriculum is opening in a new tab. Check your email for future updates!');
-                    } else {
-                        alert('Thank you! We\'ll send the curriculum to your email within 24 hours.');
-                    }
-                    closeDownloadForm();
-                    this.reset();
-                } else {
-                    alert('Oops! There was a problem. Please try again.');
-                }
-            });
-        });
-
-        // Auto-detect and show the correct page based on filename
-        (function () {
-            const filename = window.location.pathname.split('/').pop();
-            let pageToShow = 'home'; // default
-
-            if (filename === 'pricing.html') pageToShow = 'pricing';
-            else if (filename === 'programs.html') pageToShow = 'programs';
-            else if (filename === 'resources.html') pageToShow = 'resources';
-            else if (filename === 'about.html') pageToShow = 'about';
-            else if (filename === 'enroll.html') pageToShow = 'enroll';
-
-            showPage(pageToShow);
-        })();
-
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
