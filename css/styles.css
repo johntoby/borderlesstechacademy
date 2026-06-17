@@ -554,6 +554,44 @@ button { font-family: inherit; }
 }
 
 /* =================================================================
+   Hero departures visual - bigger, more immersive & captivating
+   ================================================================= */
+.hero .board {
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+}
+
+.hero .board__header {
+  margin-bottom: 0.5rem;
+  border-bottom-color: var(--ink-line);
+}
+
+.hero .board img {
+  flex: 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  min-height: 320px;
+}
+
+.hero .board__foot {
+  margin-top: 0.5rem;
+  border-top-color: var(--ink-line);
+}
+
+/* Give the visual side more weight in the hero */
+.hero__inner {
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: stretch;
+}
+
+/* =================================================================
    Boarding-pass / ticket card (program cards)
    ================================================================= */
 
