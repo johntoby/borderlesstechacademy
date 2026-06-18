@@ -449,7 +449,13 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 980px) {
-  .hero__inner { grid-template-columns: 1fr; gap: var(--space-xl); padding: var(--space-xl) 0; }
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    padding: var(--space-xl) 0;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* =================================================================
@@ -585,13 +591,15 @@ button { font-family: inherit; }
   border-top-color: var(--ink-line);
 }
 
-/* Give the visual side more weight in the hero */
-.hero__inner {
-  grid-template-columns: 0.9fr 1.1fr;
-  align-items: stretch;
+/* Desktop: give the visual side more weight in the hero */
+@media (min-width: 981px) {
+  .hero__inner {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: stretch;
+  }
 }
 
-/* Mobile-friendly hero image in departures board */
+/* Mobile: image displays below the "Your laptop is your visa" text block */
 @media (max-width: 980px) {
   .hero .board {
     background: var(--ink-soft);
@@ -600,15 +608,18 @@ button { font-family: inherit; }
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-card);
     min-height: auto;
+    width: 100%;
+    margin-top: var(--space-md);
     display: block;
   }
 
   .hero .board img {
     min-height: unset;
-    max-height: 240px;
+    max-height: 320px;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    margin: 0.25rem 0;
+    margin: 0.5rem 0;
+    width: 100%;
   }
 
   .hero .board__header {
