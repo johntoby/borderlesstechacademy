@@ -1482,6 +1482,11 @@ button { font-family: inherit; }
    Misc utility
    ================================================================= */
 
+/* Luma checkout button visibility */
+.luma-checkout--button {
+  display: inline-flex !important;
+}
+
 .text-center { text-align: center; }
 .mt-lg { margin-top: var(--space-lg); }
 .mb-0 { margin-bottom: 0 !important; }
