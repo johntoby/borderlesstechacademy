@@ -136,6 +136,7 @@
           status.textContent = form.dataset.success || "Got it — we'll be in touch soon.";
           status.className = 'form-status is-visible form-status--success';
         }
+        if (typeof fbq === 'function') fbq('track', 'Lead');
         form.reset();
         var dlModal = form.closest('[data-modal="download"]');
         if (dlModal && dlModal.dataset.downloadUrl) {
